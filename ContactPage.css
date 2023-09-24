@@ -1,0 +1,100 @@
+/* styles.css */
+
+/* Global styles */
+::selection {
+    color: #fff;
+    background: #9fbe5a;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100%;
+    padding-bottom: 700px;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #16a085, #f4d03f) center / cover
+      no-repeat;
+  }
+  
+  /* Form styles */
+  .wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .form__contact {
+    border-left: 30px solid white;
+    border-image: url(data:image/svg+xml;base64,PD94bW...); /* Your SVG data here */
+    border-image-width: 0px 0px 0px 30px;
+    transform: translateY(100%);
+    animation: init 1s ease-in-out forwards;
+  }
+  
+  .form__contact fieldset {
+    position: relative;
+    margin: 0;
+    padding: 30px 30px 40px 80px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    font: 24px "Shadows Into Light", cursive;
+    background: #fff linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 0) 0 20px /
+      100% 40px;
+  }
+  
+  .form__contact fieldset::after {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    content: "";
+    height: 100%;
+    width: 1px;
+    border-left: double #e08183;
+  }
+  
+  .form__contact p {
+    margin: 0 0 40px 0;
+    line-height: 40px;
+    color: #333;
+  }
+  
+  .form__field {
+    display: inline;
+    color: #7db665;
+    outline: none;
+  }
+  
+  .form__field:empty {
+    display: inline-block;
+    color: #ddd;
+  }
+  
+  .form__field:empty::before,
+  .form__field:empty:focus::before {
+    content: attr(data-placeholder);
+  }
+  
+  button {
+    margin-top: 40px;
+    float: right;
+    border: none;
+    font-family: "Shadows Into Light", cursive;
+    color: #e08183;
+    background: transparent;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+  }
+  
+  button:hover {
+    transform: translateX(10px);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    /* Add responsive styles for smaller screens */
+  }
+  
+  @media (max-width: 480px) {
+    /* Add responsive styles for even smaller screens */
+  }
